@@ -37,4 +37,18 @@ let add = function (a, b) { // Functions
     return a + b
 }
 
-console.log(add(3, 5))
+// ----------------- Operators --------------------
+
+// Arithmetic Operators + - * / %
+
+let x = 12
+let y = 11
+let word = "Math"
+
+// Comparison Operators > < >= <= === !== "This is strict type === !=="
+
+let isGreater = y >= x
+let isMatch = "Math" == word
+
+// Logical Operators && || !
+
