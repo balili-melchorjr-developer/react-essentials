@@ -147,6 +147,73 @@ console.log(months.includes("Jan"))
 
 console.log(months.slice(1,))
 
+// ---------------------- Array Itirators -----------------------------
 
+let students = [
+    {
+        id:1,
+        f_name: "Alex",
+        l_name: "B",
+        gender: "M",
+        married: false,
+        age: 44,
+        paid: 0,
+        courses: ["Javascript", "React"]
+    },
+    {
+        id:2,
+        f_name: "Ibrahim",
+        l_name: "M",
+        gender: "M",
+        married: true,
+        age: 32,
+        paid: 150,
+        courses: ["Javascript", "PWA"]
+    },
+    {
+        id:3,
+        f_name: "Rubi",
+        l_name: "S",
+        gender: "F",
+        married: false,
+        age: 41,
+        paid: 350,
+        courses: ["Bloggin", "React", "UX"]
+    },
+]
+
+// Map - (Variables, Index)
+
+const newStudents = students.map((student, index) => {
+    return student
+})
+
+// Filter - Filtering out the argument you pass
+
+const oldStudents = students.filter((student, index) => student.paid)
+
+
+
+// Some - Some will return a boolean value
+
+let hasStudentsBelow30 = students.some((student, index) => student.age < 30)
+
+
+// Find - Find will return the first value
+
+let studentAbove30 = students.find((student, index) => student.age > 30)
+
+// Reduce - Allow itirate over or loop an array
+// Most common uses in total in array or values in array
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
+
+let totalCost = students.reduce((accumulator, student, currentIndex, students) => {
+    accumulator = accumulator + student.paid
+    return accumulator
+       
+}, 0)
+
+
+console.log(totalCost)
 
 
