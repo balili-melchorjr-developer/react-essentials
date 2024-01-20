@@ -52,3 +52,28 @@ let isMatch = "Math" == word
 
 // Logical Operators && || !
 
+// ----------------- Ternary Operators -------------------- "Short line if-else statement"
+
+// conditon ? true : false
+
+let isHot = true
+let condition = isHot ? "It is very hot" : "No, it is cold"
+
+// Nested if else statement 
+
+let grade = 70
+let mark = ""
+
+if (grade >= 90) {
+    mark = "A"
+} else if (grade >= 80) {
+    mark = "B"
+} else if (grade >= 70) {
+    mark = "C"
+} else {
+    mark = "F"
+}
+
+const finalMark = grade >= 90 ? "A" : grade >= 80 ? "B" : grade >= 70 ? "C" : "F"
+
+console.log(finalMark)
