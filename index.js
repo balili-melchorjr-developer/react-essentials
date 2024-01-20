@@ -214,6 +214,17 @@ let totalCost = students.reduce((accumulator, student, currentIndex, students) =
 }, 0)
 
 
-console.log(totalCost)
+// ----------------------  Promises -----------------------------
+
+// Pending, Completed, Reject
+
+let promise = new Promise((resolve, reject) => {
+    const i = "Promise"
+    i === "Promises" ? resolve() : reject()
+})
+
+promise.then(() => console.log("Promise was resolved")).catch(() => console.log("Promise was rejected"))
+
+
 
 
