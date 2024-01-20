@@ -92,6 +92,29 @@ const {name, old, birthdate, status} = persona
 
 console.log(name, old, birthdate, status)
 
+// ----------------- Spread Operators -------------------- "Itirables like Array and Objects"
+
+const body = ["Head", "Knees",]
+const completeBody = ["Toes", "Shoulder", ...body]
+
+const persons = {
+    name: "John Doe",
+    olds: "21"
+}
+
+const contactPerson = {
+    contactNumber: "092099999",
+    ...persons
+}
+
+const numbers = [1, 2, 3]
+
+function sum(a, b, c) {
+    return a + b + c
+}
+
+console.log(sum(...numbers))
+
 
 
 
