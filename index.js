@@ -76,4 +76,22 @@ if (grade >= 90) {
 
 const finalMark = grade >= 90 ? "A" : grade >= 80 ? "B" : grade >= 70 ? "C" : "F"
 
-console.log(finalMark)
+// ----------------- Destructuring -------------------- "Unpack Values in Array and Objects"
+
+const objects = ["table", "phone", "apple", "test", 1]
+const [furniture, phone, fruit, test, digits] = objects
+
+const persona = {
+    name: "John Doe",
+    old: 21, 
+    birthdate: new Date(),
+    status: "Single"
+}
+
+const {name, old, birthdate, status} = persona
+
+console.log(name, old, birthdate, status)
+
+
+
+
