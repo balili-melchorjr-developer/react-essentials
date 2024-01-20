@@ -225,6 +225,17 @@ let promise = new Promise((resolve, reject) => {
 
 promise.then(() => console.log("Promise was resolved")).catch(() => console.log("Promise was rejected"))
 
+// ----------------------  Fetch API -----------------------------
 
 
+
+const url = "https://jsonplaceholder.typicode.com/todos/1"
+
+const fetchPromise = fetch(url)
+
+fetchPromise
+.then((response) => response.json())
+.then((response) => console.log(response))
+
+// ----------------------  Async & Await -----------------------------
 
