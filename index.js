@@ -113,7 +113,39 @@ function sum(a, b, c) {
     return a + b + c
 }
 
-console.log(sum(...numbers))
+// ---------------------- Array Methods -----------------------------
+
+let salad = ["Macaroni", "Nestle Cream", "Condensed Milk", "Cheese"]
+
+// 1) Push - inserts an element into an array : Notes always add on last item
+
+salad.push("Kaong")
+
+// 2) Pop - the easiest way to remove a single element from an array : Notes always delete on last item
+
+salad.pop()
+
+// 3) Splice - method changes the contents of an array by removing or replacing
+// existing elements and/or adding new elements in place
+// splice(startnumber, deleteCount= delete items after startnumber inserted, values)
+
+const months = ["Jan", "March", "April", "June"]
+
+// months.splice(1, 0, "Feb")
+// months.splice(2, 3, "May")
+
+
+// 4) Includes - method determines where an array includes
+// a certain value among its entries, returning true or false as appropriate.
+
+console.log(months.includes("Jan"))
+
+// 5) Slice - The slice() method returns a shallow copy of a
+// portion of an array into a new array object selected from start to end
+// Notes: not modified original array, accepted negative values
+// https://www.freecodecamp.org/news/the-javascript-array-handbook/
+
+console.log(months.slice(1,))
 
 
 
